@@ -1,0 +1,41 @@
+.l-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows:  150px 400px 300px 50px;
+    grid-template-areas: 
+    "header header     header     header header header"
+    ".      main       main       main   sidebar   . "
+    ".      aside-main aside-main aside-sec aside-sec aside-sec"
+    "footer footer     footer     footer    footer    footer"
+    ;
+    height: 100vh;
+    margin:0 auto ;
+}
+.l-header{
+    background-color: skyblue;
+    grid-area: header;
+}
+.l-main{
+    background-color: coral;
+    grid-area: main;
+}
+.l-sidebar{
+    background-color: royalblue;
+    grid-area: sidebar;
+}
+.l-aside-main{
+    background-color: rebeccapurple;
+    grid-area: aside-main;
+}
+.l-aside-sec{
+    background-color: red;
+    grid-area: aside-sec;
+}
+footer{
+    background-color: aqua;
+    grid-area: footer;
+}
+footer::selection{
+    perspective: 30px;
+    background-color: #000;
+}
